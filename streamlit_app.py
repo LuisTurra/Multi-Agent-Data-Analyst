@@ -403,14 +403,34 @@ if st.sidebar.button(
 # ============================================================
 try:
 
+    st.info(
+        """
+        ⏳ O motor analítico está sendo carregado.
+
+        Em hospedagens gratuitas do Streamlit Cloud,
+        o processamento pode levar entre 20s e 90s
+        devido às limitações de CPU e memória.
+
+        Isso ocorre principalmente durante:
+        • Treinamento do modelo preditivo
+        • Geração de explicabilidade SHAP
+        • Simulações financeiras
+        • Construção dos dashboards analíticos
+        """
+    )
+
     with st.spinner(
-        "Carregando motor analítico..."
+        "Inicializando modelo de IA e pipeline analítico..."
     ):
 
         engine = build_engine(
             campaign_reduction,
             top_n
         )
+
+    st.success(
+        "✅ Motor analítico carregado com sucesso!"
+    )
 
 except Exception as e:
 
