@@ -403,10 +403,10 @@ Demonstrar competências avançadas em:
 
 
 
-```bash
+
 ![Test Image 1](churnsught screen1.png)
 
-```
+
 
 ---
 
