@@ -404,7 +404,7 @@ Demonstrar competências avançadas em:
 
 
 ```bash
-assets/dashboard.png
+churnsught screen1.png
 assets/report.png
 ```
 
