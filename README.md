@@ -404,8 +404,8 @@ Demonstrar competências avançadas em:
 
 
 ```bash
-churnsught screen1.png
-assets/report.png
+![Test Image 1](churnsught screen1.png)
+
 ```
 
 ---
