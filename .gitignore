@@ -10,3 +10,5 @@ __pycache__/
 pdf_exporter.py
 projAgentic.txt
 checklist.txt
+outputs/*
+!outputs/.gitkeep

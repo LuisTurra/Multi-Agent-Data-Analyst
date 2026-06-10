@@ -87,6 +87,12 @@ import streamlit as st
 import pandas as pd
 
 # ============================================================
+# [1.2] streamlit PDF 
+# Correção na Visualização do PDF na hospedagem Streamlit Cloud
+# ============================================================
+import streamlit.components.v1 as components
+
+# ============================================================
 # [1.3] DataLayer
 # Camada de carregamento de dados
 # ============================================================
@@ -1085,32 +1091,33 @@ with tab6:
                 st.markdown(
                     "### Visualização do Relatório"
                 )
+                st.info(
+                    """
+                    A visualização do PDF pode levar alguns segundos
+                    para carregar em hospedagens gratuitas.
+                    """
+                )
+                import base64
+                import streamlit.components.v1 as components
 
-                try:
+                base64_pdf = base64.b64encode(
+                    pdf_bytes
+                ).decode("utf-8")
 
-                    st.pdf(pdf_bytes)
+                pdf_display = f"""
+                <iframe
+                    src="data:application/pdf;base64,{base64_pdf}"
+                    width="100%"
+                    height="1000px"
+                    type="application/pdf">
+                </iframe>
+                """
 
-                except Exception:
-
-                    import base64
-
-                    base64_pdf = base64.b64encode(
-                        pdf_bytes
-                    ).decode("utf-8")
-
-                    pdf_display = f'''
-                        <iframe
-                            src="data:application/pdf;base64,{base64_pdf}"
-                            width="100%"
-                            height="900"
-                            type="application/pdf">
-                        </iframe>
-                    '''
-
-                    st.markdown(
-                        pdf_display,
-                        unsafe_allow_html=True
-                    )
+                components.html(
+                    pdf_display,
+                    height=1000,
+                    scrolling=True
+                )
 
         except Exception as e:
 
