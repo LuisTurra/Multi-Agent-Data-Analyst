@@ -404,7 +404,7 @@ Demonstrar competências avançadas em:
 
 
 
-![Test Image 1]<img src="https://github.com/LuisTurra/Multi-Agent-Data-Analyst/blob/main/churnsught%20screen1.png">
+![Main page]<img src="https://github.com/LuisTurra/Multi-Agent-Data-Analyst/blob/main/churnsught%20screen1.png">
 
 
 
