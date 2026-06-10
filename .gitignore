@@ -12,3 +12,5 @@ projAgentic.txt
 checklist.txt
 outputs/*
 !outputs/.gitkeep
+reports/*
+!reports/.gitkeep

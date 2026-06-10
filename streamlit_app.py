@@ -1093,8 +1093,12 @@ with tab6:
                 )
                 st.info(
                     """
-                    A visualização do PDF pode levar alguns segundos
-                    para carregar em hospedagens gratuitas.
+                    Alguns navegadores com bloqueadores
+                    de privacidade agressivos (como Brave)
+                    podem impedir a visualização inline do PDF.
+
+                    Caso a visualização não apareça,
+                    utilize o botão de download acima.
                     """
                 )
                 import base64
