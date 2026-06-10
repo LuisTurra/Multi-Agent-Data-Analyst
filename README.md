@@ -332,7 +332,7 @@ O PDF gerado inclui:
 ## 1. Clone o repositório
 
 ```bash
-git clone https://github.com/seuusuario/ChurnSight-ai.git
+git clone 
 ```
 
 ---
@@ -355,7 +355,7 @@ streamlit run streamlit_app.py
 
 # 📦 Dependências Principais
 
-```txt
+
 streamlit
 pandas
 numpy
@@ -365,7 +365,7 @@ shap
 plotly
 reportlab
 groq
-```
+
 
 ---
 
@@ -401,7 +401,7 @@ Demonstrar competências avançadas em:
 
 # 📷 Dashboard
 
-Adicione aqui screenshots do projeto:
+
 
 ```bash
 assets/dashboard.png
