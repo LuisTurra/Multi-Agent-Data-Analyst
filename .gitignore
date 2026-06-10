@@ -1,0 +1,12 @@
+temp*
+relatorios/
+data/transactions.csv
+projeto.txt
+next.txt
+.streamlit/
+__pycache__/
+*.pyc
+.env
+pdf_exporter.py
+projAgentic.txt
+checklist.txt
