@@ -410,20 +410,6 @@ assets/report.png
 
 ---
 
-# 🔮 Próximas Melhorias
-
-* Deploy cloud
-* API REST
-* Banco de dados
-* Autenticação
-* Multi-tenant
-* Forecasting temporal
-* Model monitoring
-* Drift detection
-* AutoML
-* A/B retention simulation
-
----
 
 # 👨‍💻 Autor
 
