@@ -956,8 +956,9 @@ with tab5:
     if st.session_state.narrative:
 
         st.markdown(
-            st.session_state.narrative
-        )
+    st.session_state.narrative,
+    unsafe_allow_html=False
+)
 
     else:
 

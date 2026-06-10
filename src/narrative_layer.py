@@ -936,9 +936,30 @@ class NarrativeLayer:
                     "❌ Erro ao gerar narrativa: "
                     "resposta vazia da IA."
                 )
+            # =================================================
+            # Limpeza de Markdown Problemático
+            # =================================================
+            narrative = narrative.replace(
+                "```markdown",
+                ""
+            )
 
+            narrative = narrative.replace(
+                "```",
+                ""
+            )
+
+            narrative = narrative.replace(
+                "`",
+                ""
+            )
+
+            narrative = narrative.replace(
+                "\t",
+                " "
+            )
             return narrative
-
+            
         # =================================================
         # [2.7.14] Tratamento de Exceções
         # =================================================
