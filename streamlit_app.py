@@ -1060,7 +1060,7 @@ with tab6:
                         ),
 
                         filename=(
-                            "Relatorio_Executivo_ChurnGuard.pdf"
+                            "Relatorio_Executivo_ChurnSight.pdf"
                         )
                     )
                 )
@@ -1081,7 +1081,7 @@ with tab6:
                         label="⬇️ Baixar PDF Executivo",
                         data=pdf_bytes,
                         file_name=(
-                            "Relatorio_Executivo_ChurnGuard.pdf"
+                            "Relatorio_Executivo_ChurnSight.pdf"
                         ),
                         mime="application/pdf"
                     )
